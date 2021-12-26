@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Playstation 4 | Responsive Design</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" class="logo">
+            <nav class="header__nav">
+                <ul class="header__list" id="menuList">
+                    <li class="header__item"><a href="#" class="header__link">Game Controller</a></li>
+                    <li class="header__item"><a href="#" class="header__link">VR Accessories</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Media Remotes</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Other</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </header>
+
+        <div class="row">
+            <div class="col-1">
+                <h2 class="col-title">PS4 V2 <br> Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+
+                <button type="button" class="btn">But Now <img src="img/arrow.png" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png" alt="add">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+    
+    
+    <script>
+        var menuList = document.getElementById("menuList");
+        
+        menuList.style.maxHeight = "0px";
+        
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+    
+    
+</body>
+
+</html>
